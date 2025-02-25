@@ -1,0 +1,84 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #250902; /* Color based on logo */
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+.cover img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #250902;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3b0d08;
+}
+
+footer {
+    background-color: #250902;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.products, .reviews, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.products img, .review img {
+    width: 100px;
+    height: auto;
+}
+
+/* Wave Effect on Page Load */
+body {
+    overflow: hidden;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.wave {
+    animation: wave 1s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
